@@ -228,6 +228,26 @@ hr {
 .align-right {
   text-align: right; }
 
+  .flex-container {
+    display: flex;
+    align-items: flex-start; /* Align items at the top */
+    margin-bottom: 2rem; /* Spacing between sections */
+}
+
+.flex-container .content {
+    flex: 1; /* This allows the text to take the available space */
+    margin-right: 20px; /* Space between text and image */
+}
+
+.flex-container .image.object {
+    flex: 0 0 auto; /* This prevents the image from shrinking */
+}
+
+.flex-container img {
+    max-width: 100%; /* Make sure images are responsive */
+    height: auto; /* Maintain aspect ratio */
+}
+
 /* Row */
 .row {
   display: flex;
